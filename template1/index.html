@@ -24,7 +24,7 @@
         }
 
         div.container {
-            padding: 121px 62px 100px 68px;
+            padding: 121px 62px 100px 65px;
             height: 1282px;
             width: 700px;
             background: #000000; 
@@ -34,19 +34,29 @@
         div.header {
             height: 50px;
             width: 100%;
+            margin-bottom: 121px;
+            display: flex;
+            position: relative;
+        }
+
+        img.logo {
+            height: 29px;
+            position: absolute;
+            left: 0px;
         }
 
         div.main {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            justify-content: space-between;   
+            justify-content: space-between;
         }
 
         h1.title {
             font-size: 60px;
             line-height: 65px;
-            margin-bottom: 45px
+            margin-bottom: 45px;
+            width: 100%;
         }
 
         p.description {
@@ -62,39 +72,56 @@
         a.instagram {
             text-decoration: none;
             font-weight: 700;
+            color: inherit;
         }
 
-        img {
+        img.hero {
             width: 570px;
             height: 380px;
             margin-bottom: 37px;
+            margin-top: 45px;
         }
 
         p.about {
             margin-bottom: 35px;
         }
 
-        /* div.powered {
-
+        div.powered {
+            margin-top: 45px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 5px;
+            position: relative;
+            left: 50%;
+            right: 50%;
         }
 
         span.by {
-
+            font-size: 10px;
         }
 
-        svg.leroy {
-
-        } */
+        img.leroy {
+            width: 60px;
+        }
         
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">INOVA</div>
+        <div class="header">
+            <img class="logo" src="./INOVA.svg" alt="inova logo" />
+        </div>
         <div class="main">
-            <h1 class="title">Titulo</h1>
-            <p>description</p>
-            <a href="#">anchor</a>
+            <h1 class="title">Quer saber como será a sua casa nos próximos anos?</h1>
+            <p>Saiba mais em <a class="default" href="http://www.futurodoviver.com.br">futurodoviver.com.br</a></p>
+            <img class="hero" src="./hero.svg" alt="inova" ></svg>
+            <p class="about">Acompanhe também pelo nosso instagram: <br /><a class="instagram" href="https://instagram.com/futurodoviver">@futurodoviver</a></p>
+            <div class="powered">
+                <span class="by">powered by</span>
+                <img class="leroy" src="leroy.svg" alt="Leroy Merlin Logo"/>
+            </div>
         </div>
     </div>
 </body>
